@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://code.s3.yandex.net/web-code/normalize.css">
+  <link rel="stylesheet" href="style.css">
+
+  
+
+  <title>Портфолио</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="портфолио Лариса Смирнова на Яндекс Практикуме">
+  <meta name="keywords" content="html, css, javascript">
+  <meta name="author" content="Лариса Смирнова">
+</head>
+<body class="page">
+  <header class="header centered-block">
+    <h1 class="centered-block"><a href="#" class="header__link" lang="ru">Лариса&nbspСмирнова</a></h1>
+  </header>
+  <nav class="menu centered-block page__menu">
+    <a href="#practice" class="menu__link menu__link_active">Практика HTML, CSS и JavaScript</a>
+    <a href="#beginner" class="menu__link">Первые шаги в HTML и CSS</a>
+    <a href="#frameworks" class="menu__link">Библиотеки JavaScript</a>
+    
+  </nav>
+  <main class="content centered-block">
+   
+    <section id="practice">
+      <h2 class="content__title">Практика HTML, CSS и JavaScript</h2>
+      <ul class="flex-row list flex-row_space_bottom centered-block">
+        <li class="project project_name_how-to-study project_width_m project_height_m">
+          <a href="css_animation/CSS_animation.html" class="project__overlay" target="blank">CSS-анимации</a>
+          <!-- <iframe src="CSS_animation.html" name="iframe_a"></iframe> -->
+          <!-- <object data="CSS_animation.html" width="1000" height="1000" type="text/html"> -->
+          </object>
+        </li>
+        <li class="project project_name_across-russia project_width_l project_height_m">
+          <a href="adaptive/index.html" class="project__overlay" target="blank">Адаптивная вёрстка</a>
+        </li>
+        <li class="project project_name_mesto project_width_m project_height_m">
+          <a href="#" class="project__overlay">Приложение на JavaScript</a>
+        </li>
+      </ul>
+    </section>
+  
+    <section id="beginner">
+      <h2 class="content__title">Первые шаги в HTML и CSS</h2>
+      <ul class="beginner_list list flex-row_space_bottom">
+        <li class="project project_name_music-album">
+          <div class="project__overlay music-album__overlay">
+            <a href="#" class="project__overlay__link">Обложка музыкального альбома</a>
+            <p class="music-album_p"><a href="https://www.noisli.com" target="_blank" class="link_music">Плейлист</a> для беспечного занятия кодингом.</p>
+            <p class="music-album_p">Один раз послушал — семь раз покодил.</p>
+        </div>
+          <div class="music-album">
+            <h1 class="music-album_h1">The Life of</h1>
+            <h2 class="music-album_h2">Coder</h2>
+            <img class="music-album_img" src="https://pictures.s3.yandex.net/frontend-developer/free-course/mountains.jpg" alt="картинка на обложке">
+            <h3 class="music-album_h3">2020</h3>
+            <h3 class="music-album_h3">Rita H.</h3>
+          </div>
+            
+        </li>
+        <li class="project_name_design-principles">
+          <a href="#" class="project__overlay">Посадочная страница</a>
+          <h1 class="design-principles__h1">Четыре правила вёрстки</h1>
+        </li>
+      </ul>
+    </section>
+
+    <section id="frameworks">
+      <h2 class="content__title">Библиотеки JavaScript</h2>
+
+      <div class="grid">
+        <!-- <video class="project grid__item project__video" src="https://code.s3.yandex.net/web-code/like.mp4" autoplay muted loop></video> -->
+        <div class="project grid__item project_name_like" id="project_name_like">
+
+            <button class="button_like" id="button_like">Like</button>
+            <button class="button_reset">reset</button>
+        </div>
+        <div class="project grid__item project_name_slider">
+          <a href="#" class="project__overlay">Слайдер</a>
+        </div>
+        <div class="project grid__item project_name_reactive">
+          <a href="#" class="project__overlay">React, Vue, Angular</a>
+        </div>
+        <video class="project grid__item project__video" src="https://code.s3.yandex.net/web-code/procrastinate.mov" autoplay muted loop></video>
+      </div>
+    </section>
+   
+<!-- подключение библиотеки p5.js -->
+<script src="https://code.s3.yandex.net/web-code/libs/p5.js"></script>
+<!-- подключение файла с js -->
+<script src="script.js"></script>
+
+
+  </main>
+  <footer class="footer centered-block">
+    <div class="footer__logo"></div>
+  </footer>
+</body>
+</html>
